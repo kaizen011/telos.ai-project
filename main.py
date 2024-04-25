@@ -1,8 +1,6 @@
 import asyncio
 
-from dotenv import load_dotenv
-
-import PyPDF2
+import PyPDF2 
 
 from langchain_community.embeddings import OllamaEmbeddings
 
@@ -36,8 +34,6 @@ async def on_chat_start():
 
     load_dotenv()
 
- 
-
     loader = PyPDFLoader("mental_health_Document.pdf")
 
     documents=loader.load()
@@ -48,7 +44,7 @@ async def on_chat_start():
 
     texts = text_splitter.split_documents(documents)
 
- 
+
 
     model_name = "BAAI/bge-large-en"
 
