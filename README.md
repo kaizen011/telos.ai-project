@@ -1,1 +1,1 @@
-# telos.ai-project
+# teloslabs ai project starter
